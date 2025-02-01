@@ -1,0 +1,1018 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ 
+
+
+    <!-- style de texte contact  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Funnel+Display:wght@300..800&family=VT323&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            top: 0;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        label,
+        h1
+         {
+            font-family: "Kalnia Glaze", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            background-image: repeating-linear-gradient(to right, teal 0%, teal 50%);
+            color: white;
+            display: grid;
+            position: relative;
+            padding: 0;
+            justify-content: stretch;
+            animation: all 3s ;
+
+
+        }
+ 
+        .monli { /* la missile */
+            background-image: url(./f.png);
+            position: absolute;
+            top: 690px;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            animation: move 5s cubic-bezier(0, 0, 0, 0) forwards infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(1536px, -769px);
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        button {
+            padding-left: 10px;
+            width: 70px;
+            height: 40px;
+            border-bottom: 10px solid teal;
+            border-radius: 15px 5px;
+            background-color: #4682b4;
+            color: white;
+            cursor: pointer;
+            margin: 12px;
+            box-shadow: 2px 0px 1px;
+            font-size: larger;
+            display: inline;
+            float: left; 
+            animation: all 3s;
+
+
+        }
+
+        button:hover {
+            border-color: white;
+
+        }
+
+        button:focus {
+            border-color: orange;
+            border-bottom: 10px solid  orange;
+
+        }
+        
+        p {
+            font-style: "arial";
+            font-size: large;
+            position: absolute;
+            z-index: 1;
+            margin: calc(1em + 3em);
+            background-color: white;
+            text-align: auto;
+            color: black;
+            border: 5px solid burlywood;
+            border-radius: 0px 0px 0px 20px;
+            overflow: auto;
+            flex-direction: row;
+            border-top: double;
+            box-shadow: 12px 0px 12px;
+            max-width: 700px;
+            animation: all 5s forwards;
+            max-height: 500px;
+            padding-left: 5px;
+        }
+
+     /*    .dropdown:hover p {
+            animation: all  5s forwards;
+        }
+
+
+
+
+        .appart:hover .monP1 {
+            display: block;
+        }
+
+        .montre-toi:hover .monP2 {
+            display: block;
+        } */
+
+        .mesImage {
+            float: right;
+            animation: scal 3s infinite;
+        }
+
+        @keyframes scal {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+                border-radius: 5cqw;
+                opacity: 0;
+
+            }
+        }
+
+        .monP::after {
+            content: "😉";
+            color: burlywood;
+        }
+
+
+        .monP::before {
+            content: "✔HTML";
+            color: red;
+            font-size: larger;
+        }
+
+        p::first-letter {
+            font-weight: bold;
+            font-size: larger;
+            color: red;
+        }
+
+        .monP1::before {
+            content: "✔CSS";
+            font-size: larger;
+            color: blue;
+        }
+
+        .monP1::after {
+            content: "🤞";
+            color: blue;
+            font-size: larger;
+        }
+
+        .monP2::before {
+            content: "✔JavaScript";
+            color: green;
+            font-size: larger;
+        }
+
+        .monP2::after {
+            content: "fe-gaf-a-JS😎";
+            font-size: larger;
+            color: green;
+        }
+
+        .monP::first-letter {
+            color: red;
+
+        }
+
+        #divGeneral {
+            display: block;
+
+        }
+
+        #monDiv {
+            display: flex;
+            float: right;
+            height: auto;
+            max-width: 700px;
+            border-radius: 10px 5px;
+            position: relative;
+            grid-template-columns: 1fr 3fr;
+
+
+        }
+
+        h1 {
+            text-align: right;
+            padding-right: 24%;
+        } 
+
+        h1::first-letter {
+            font-size: 50px;
+            font-style: oblique;
+        }
+
+        .monDivDecontact {
+            width: 700px;
+            text-align: left;
+padding-top: 25px;
+        }
+
+        textarea {
+            min-height: 100px;
+            border-radius: 0px 20px 0px 0px;
+            border-style: hidden;
+            font-size: larger;
+            box-shadow: 6px 3px 2px teal;
+            margin: 8px;
+            color: black;
+            background-color: bisque;
+            width: auto;
+            text-align: left;
+        }
+
+
+        textarea:focus {
+            border-style: hidden;
+            background-color: white;
+        }
+
+        textarea::placeholder {
+            color: red;
+            text-align: center;
+
+        }
+
+        input::placeholder {
+            color: red;
+            text-align: center;
+        }
+
+
+
+
+        input {
+            border-radius: 0px 20px 0px 0px;
+            position: relative;
+            border-style: hidden;
+            width: 70%;
+            box-shadow: 6px 3px 2px teal;
+            max-width: 250px;
+            height: 25px;
+            margin: 4px;
+            color: black;
+            background-color: bisque;
+            text-align: left;
+        }
+
+        input:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .monGrid {
+            display: grid;
+            text-align: left;
+        }
+
+        #sendMs {
+            background-image: url(./svg.svg);
+            width: 109px;
+            text-align: center;
+            text-align: center;
+            background-repeat: repeat;
+            color:green;
+            font-size: larger;
+        }
+
+
+        #sendMs:focus {
+            animation: 2s mouvement linear infinite;
+            color:white;
+        }
+
+
+        @keyframes mouvement {
+            from {
+                width: 109px;
+            }
+
+            to {
+                width: 200px;
+                border-radius: 0% 100% 100% 0%;
+            }
+        }
+
+       
+        /* Programme d'adoptation à l'affichage aux différéent Ecrans */
+
+
+
+        @media (max-width:1024px) {
+
+            label {
+            font-size: 30px;
+            display: block;
+        }
+
+            h3 {
+                font-size: small;
+            }
+
+            p {
+                max-width: 200px;
+                max-height: auto;
+                font-size: small;
+                margin: calc(2em + 3em);
+                padding-right: 12%;
+
+            }
+
+            input {
+                width: 40%;
+                margin: 4px;
+            }
+
+            #monDiv {
+                float: right;
+                max-width: 300px;
+                height: auto;
+                width: auto;
+                border-radius: 10px 5px;
+
+            }
+
+            button {
+                width: 40px;
+                height: 20px;
+                position: fixed;
+                border-radius: 7px 2px;
+                position: static;
+                align-items: center;
+                justify-content: center;
+                background-color: #4682b4;
+                cursor: pointer;
+                margin: 7px;
+                display: inline;
+                float: left;
+                font-size: x-small;
+
+
+            }
+
+            .mesImage {
+                float: right;
+                animation: scal 3s infinite;
+                max-width: 100px;
+                height: 100px;
+            }
+
+
+
+        }
+
+
+
+
+        @media (max-width:768px) {
+            #contact-form {
+                display: grid;
+                width: 300px;
+                text-align: right;
+
+            }
+
+            input {
+                width: 20;
+                text-align: left;
+                
+            }
+
+            .areaT {
+                font-size: 15px;
+                text-align: left;
+
+
+            }
+
+            label {
+            font-size: 30px;
+            display: block;
+        }
+
+            h3 {
+                font-size: small;
+            }
+
+            p {
+                max-width: 100px;
+                max-height: auto;
+                font-size: small;
+                margin: calc(1em + 2em);
+                padding-right: 12%;
+
+            }
+
+            input {
+                width: 40%;
+                margin: 4px;
+            }
+
+            #monDiv {
+                float: right;
+                max-width: 300px;
+                height: auto;
+                width: auto;
+                border-radius: 10px 5px;
+
+            }
+
+            button {
+                width: 40px;
+                height: 20px;
+                position: fixed;
+                border-radius: 7px 2px;
+                position: static;
+                align-items: center;
+                justify-content: center;
+                background: color #4682b4;
+                cursor: pointer;
+                margin: 7px;
+                box-shadow: 2px 5px 1px;
+                display: inline;
+                float: left;
+                font-size: x-small;
+
+
+            }
+
+
+
+
+            .mesImage {
+                float: right;
+                animation: scal 3s infinite;
+                width: 50px;
+                height: 50px;
+            }
+
+            @keyframes scal {
+                from {
+                    transform: scale(0);
+                }
+
+                to {
+                    transform: scale(0.5);
+                    border-radius: 5cqw;
+                    opacity: 0;
+
+                }
+            }
+
+
+            .monli {
+
+                background-image: url(./f.png);
+                position: absolute;
+                top: 768px;
+                left: -100px;
+                width: 100px;
+                height: 100px;
+                animation: move 5s cubic-bezier(0.42, 0, 0.58, 1) forwards infinite;
+
+            }
+
+            @keyframes move {
+                0% {
+                    transform: translate(0, 0);
+                }
+
+                100% {
+                    transform: translate(608px, -585px);
+                    opacity: 0;
+                   color: red;
+                    display: none;
+                }
+            }
+
+
+
+
+            p {
+                font-style: "arial";
+                font-size: large;
+                position: absolute;
+                display: none;
+                z-index: 1;
+                margin: calc(1em + 2em);
+                background-color: rgb(245, 244, 244);
+                text-align: auto;
+                color: black;
+                border: 5px solid burlywood;
+                width: auto;
+                height: auto;
+                overflow: auto;
+                flex-direction: row;
+                border-top: double;
+                box-shadow: 12px 0px 12px;
+                max-width: 250px;
+                max-height: auto;
+            }
+
+
+        }
+
+
+
+
+        label {
+            font-size: 30px;
+            display: block;
+        }
+
+        #contact-form {
+            display: grid;
+            width: 490px;
+
+        }
+
+        input {
+            width: auto;
+            text-align: left;
+        }
+
+        .areaT {
+            font-size: 15px;
+            text-align: left;
+
+
+        }
+     
+        @keyframes mouvee {
+                from{
+                    width: 0%;
+                } to{
+                    width:100%;
+                }
+                
+            }
+
+            span{
+                font-size: larger;
+                color:red;
+            }
+
+            input::placeholder{
+                padding-left: 5px;
+            }
+
+            /* style du texte de contact */
+
+        h1, label {
+            font-family: "Edu AU VIC WA NT Arrows", serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            color: black;
+    }
+        
+    </style>
+    <script defer src="./envoie.js"></script> <!-- arrive du serveur! ?? plutard-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="divGeneral">
+            <h3 style=" padding-top: 10px; padding-bottom: 4px; font-size: large; text-overflow: ellipsis;  overflow: hidden; white-space: nowrap; font-style: normal; animation: mouvee 10s infinite forwards; padding-left: 16px;" >!:Les Boutons contient des infos, pour voir veuillez cliquer sur le bouton de votre choix en dessous, et pour me contacter, formulaire de contact à droite! 
+                </h3>
+
+            <div class="dropdown" id="left-float">
+                <button tabindex="0" class="dropdown" title="Infos sur html" id="monHtml">HTML</button>
+                <p class="monP" style="display: none;" title="tous savoir sur HTML!" >
+                    <img src="./R.jpg" alt="logo html " class="mesImage" width="100px" height="100px">
+
+                    <script>
+                        const btInfos = document.querySelector('#monHtml');
+                        const messsage1 = document.querySelector('.monP');
+
+                            btInfos.addEventListener('click', function () {
+                                messsage1.style.display="block";
+                            });
+
+
+                    </script>
+
+                    <i>Langage HTML (HyperText Markup Language) <span>?</span> est étroitement liée à l'évolution
+                        d'Internet
+                        et du World Wide Web. Voici une version rédigée de son histoire :</i><br>
+
+                    <b>Les Origines de l'HTML</b><br>
+                    HTML a été créé au début des années 1990 par Tim Berners-Lee, un scientifique britannique
+                    travaillant au
+                    CERN (Conseil Européen pour la Recherche Nucléaire) à Genève, en Suisse. À l'époque, Berners-Lee
+                    cherchait un moyen de partager facilement des documents entre les chercheurs dispersés dans le monde
+                    entier.
+
+                    <br> <b> La Première Version
+                    </b><br> En 1991, Tim Berners-Lee a publié la première version de HTML, qui comprenait 18 éléments.
+                    Cette version initiale était simple mais suffisamment puissante pour permettre la création de
+                    documents
+                    hypertextes avec des liens vers d'autres documents.
+
+                    <br><b> HTML 2.0 et la Standardisation
+                    </b> <br> Avec la popularisation du Web, il est devenu nécessaire de standardiser le langage HTML
+                    pour
+                    assurer la compatibilité entre les différents navigateurs. En 1995, la spécification HTML 2.0 a été
+                    publiée par l'Internet Engineering Task Force (IETF), formalisant ainsi de nombreuses
+                    fonctionnalités
+                    présentes dans les premières versions non standardisées.
+
+                    <br><b> L'Évolution vers HTML 3.2 et 4.01
+                    </b> <br> HTML 3.2, publié en 1997, a introduit des fonctionnalités supplémentaires comme les
+                    tableaux,
+                    les applets Java, et les feuilles de style. HTML 4.01, publié en 1999, a apporté des améliorations
+                    significatives en matière de structuration du contenu et de séparation du contenu et de la
+                    présentation,
+                    notamment grâce à l'utilisation de CSS (Cascading Style Sheets).
+
+                    <br><b> L'Impact des Technologies Dynamiques
+                    </b> <br> L'introduction de JavaScript a permis de rendre les pages Web interactives, marquant le
+                    début
+                    des technologies Web dynamiques. Les DHTML (Dynamic HTML) ont ajouté des capacités interactives aux
+                    pages Web statiques en utilisant une combinaison de HTML, CSS et JavaScript.
+
+                    <br><b> HTML5 et les Avancées Modernes
+                    </b> <br> En 2008, le W3C (World Wide Web Consortium) a commencé à travailler sur HTML5, une
+                    révision
+                    majeure visant à répondre aux besoins des applications Web modernes. HTML5 a été officiellement
+                    publié
+                    en octobre 2014. Cette version a introduit de nouvelles balises sémantiques (comme article, section,
+                    et
+                    nav), des API pour des fonctions complexes (comme le dessin 2D et 3D avec canvas, le stockage local
+                    et
+                    la gestion des médias), et a éliminé la dépendance à des plugins externes pour des fonctionnalités
+                    multimédia.
+
+                    <br><b> L'Avenir de l'HTML
+                    </b> <br> HTML continue d'évoluer pour s'adapter aux besoins changeants du Web. Le W3C et le WHATWG
+                    (Web
+                    Hypertext Application Technology Working Group) travaillent ensemble pour maintenir et développer de
+                    nouvelles fonctionnalités pour HTML. Avec l'essor des technologies comme les Progressive Web Apps
+                    (PWA)
+                    et le WebAssembly, HTML reste un pilier central du développement Web.
+
+                    <br><b> Conclusion
+                    </b> <br> Depuis sa création, HTML a profondément transformé la manière dont l'information est
+                    partagée
+                    et consommée sur Internet. Il continue d'évoluer, intégrant de nouvelles fonctionnalités et
+                    s'adaptant
+                    aux besoins des utilisateurs et des développeurs pour rester pertinent dans un paysage technologique
+                    en
+                    perpétuelle évolution. <br>
+                    <br><i>Si voulez-vous savoir à quoi ça ressemble le code cliquez - <a
+                            href="https://developer.mozilla.org/fr/docs/Web/HTML"> <span>ici</span> </a></i>
+
+
+
+
+                </p>
+
+            </div>
+            <div class="appart" id="midlle-float">
+                <button tabindex="0" class="appart" title="infos sur css" id="monCSS">CSS</button>
+
+                <p class="monP1" title="tous savoir sur CSS!" style="display: none; background-color: cornsilk; color: black;">
+                    <img src="./OIP.jpg" alt="logo de CSS" width="100px" height="100px" class="mesImage">
+
+                    <script>
+
+                        const btCSS = document.querySelector('#monCSS');
+                        const message2 = document.querySelector('.monP1');
+                            btCSS.addEventListener('click', function () {
+                                message2.style.display="block";
+                            });
+                    </script>
+                    <i> Langage CSS (Cascading Style Sheets) <span>?</span> est une partie intégrante de l'évolution du
+                        développement web, permettant de séparer la présentation du contenu et de créer des interfaces
+                        utilisateur plus flexibles et attrayantes.: </i> <br>
+
+                    <br><b> Les Origines de CSS
+                    </b> <br> Dans les années 1990, le développement web était dominé par HTML, qui était principalement
+                    utilisé pour structurer le contenu des pages web. Cependant, HTML ne permettait pas de contrôler
+                    efficacement la présentation et le style des documents. C'est dans ce contexte que Håkon Wium Lie,
+                    alors
+                    travaillant pour le CERN et plus tard pour le W3C (World Wide Web Consortium), a proposé le concept
+                    de
+                    CSS en octobre 1994.
+
+                    <br><b>
+                        La Première Version de CSS
+                    </b> <br> En décembre 1996, le W3C a publié la première recommandation officielle de CSS, connue
+                    sous le
+                    nom de CSS1. Cette première version permettait de définir des styles de texte, des marges, des
+                    bordures,
+                    des couleurs, et des arrière-plans pour les éléments HTML. CSS1 a introduit le concept de cascade,
+                    permettant de combiner plusieurs feuilles de style et de gérer les priorités de style.
+
+                    <br><b> CSS2 et les Améliorations
+                    </b> <br> CSS2 a été publié en mai 1998. Cette version a apporté des améliorations significatives, y
+                    compris le positionnement absolu, relatif et fixe des éléments, les z-index pour la gestion de la
+                    superposition d'éléments, et les styles pour différents types de médias (comme les impressions et
+                    les
+                    écrans). CSS2 a également introduit les pseudo-classes et les pseudo-éléments, permettant des
+                    sélections
+                    et des styles plus sophistiqués.
+
+                    <br><b> L'Émergence de CSS3
+                    </b> <br> Avec l'essor du web dynamique et des besoins croissants en termes de design et
+                    d'interactivité, le développement de CSS3 a commencé au début des années 2000. Contrairement aux
+                    versions précédentes, CSS3 a été modulé en plusieurs documents appelés "modules", chacun traitant
+                    'un
+                    aspect spécifique des styles et des mises en page. Les premiers modules de CSS3 ont été publiés en
+                    1999,
+                    mais c'est au cours des années 2010 que CSS3 est devenu largement supporté par les navigateurs. CSS3
+                    a
+                    introduit de nombreuses nouvelles fonctionnalités, y compris les transitions, les animations, les
+                    transformations 2D et 3D, les ombres portées, les bordures arrondies, les dégradés, et bien plus
+                    encore.
+
+                    L'Impact des Préprocesseurs CSS
+                    </b> <br> Les préprocesseurs CSS comme Sass (Syntactically Awesome Stylesheets) et Less ont gagné en
+                    popularité dans les années 2010. Ces outils ont permis aux développeurs de gérer des feuilles de
+                    style
+                    plus complexes en offrant des fonctionnalités avancées comme les variables, les mixins, les
+                    fonctions,
+                    et les opérations mathématiques, qui ne sont pas nativement disponibles en CSS.
+
+                    <br> <b> L'Évolution Continue et les Futures Directions
+                    </b> <br> Le développement de CSS ne s'est pas arrêté avec CSS3. Le W3C et d'autres groupes de
+                    travail
+                    continuent de développer et d'améliorer le langage, introduisant de nouvelles fonctionnalités et
+                    améliorations. Des concepts comme CSS Grid, Flexbox, et les Custom Properties (variables CSS) ont
+                    radicalement transformé la manière dont les mises en page sont créées et gérées. L'initiative CSS4,
+                    bien
+                    que non officielle en tant que version distincte, continue de pousser les limites en apportant des
+                    améliorations incrémentales et des nouvelles fonctionnalités au langage.
+
+                    <br><b> Conclusion
+                    </b> <br> CSS a parcouru un long chemin depuis sa création, transformant le développement web et
+                    permettant des conceptions de sites web plus riches et plus sophistiquées. En séparant la
+                    présentation
+                    du contenu, CSS a permis aux développeurs et aux designers de collaborer plus efficacement et de
+                    créer
+                    des expériences utilisateur plus engageantes. Aujourd'hui, CSS reste un élément fondamental du
+                    développement web moderne, évoluant constamment pour répondre aux besoins changeants des
+                    utilisateurs et
+                    des développeurs.
+
+                    <br><i>Si voulez-vous savoir à quoi ça ressemble le code cliquez - <a
+                            href="https://tailwindcss.com/"> <span>ici</span></a></i>
+                </p>
+
+            </div>
+            <div class="montre-toi" id="right-flaot">      
+
+                <button tabindex="0" class="montre-toi" title="infos sur js" id="messageJS">J-S</button>
+                <p class="monP2" title="tous savoir sur JS!" style="display: none; background-color: lightblue; color: black;" >
+                    <img src="./js.jpg" alt="logo du JS" width="100px" height="100px" class="mesImage">
+
+                    <script>
+
+                        const btJS = document.querySelector('#messageJS');
+                        const message3 = document.querySelector('.monP2');
+                            btJS.addEventListener('click', function () {
+                                message3.style.display="block";
+                            });
+                    </script>
+
+                    <i>  Langage JavaScript (JS)  <span>?</span> est riche et complexe, influençant considérablement le
+                        développement web et les technologies de l’internet moderne. :</i>
+                    <br><b>Les Origines de JavaScript
+                    </b><br>JavaScript a été créé en 1995 par Brendan Eich, alors ingénieur chez Netscape
+                    Communications. À
+                    cette époque, Netscape cherchait à ajouter des fonctionnalités dynamiques et interactives à ses
+                    pages
+                    web. Brendan Eich a développé JavaScript en seulement dix jours, initialement sous le nom de
+                    "Mocha",
+                    qui a ensuite été changé en "LiveScript" et finalement en "JavaScript" pour capitaliser sur la
+                 popularité du langage de programmation Java, bien que les deux langages soient fondamentalement
+                    différents.
+
+                    <br><b>Les Premières Versions et l'Adoption Initiale
+                    </b><br>La première version de JavaScript a été intégrée dans Netscape Navigator 2.0 en 1995. Bien
+                    que
+                    limité dans ses fonctionnalités, JavaScript permettait déjà d’ajouter des interactions simples et
+                    des
+                    validations de formulaires, ce qui était révolutionnaire pour l’époque. Peu de temps après,
+                    Microsoft a
+                    introduit une version similaire appelée JScript dans Internet Explorer 3.0 en 1996, ce qui a conduit
+                    à
+                    une fragmentation et à des problèmes de compatibilité entre les navigateurs.
+
+                    <br><b>La Standardisation avec ECMAScript
+                    </b><br>Pour résoudre les problèmes de compatibilité, Netscape a soumis JavaScript à l’ECMA
+                    International (European Computer Manufacturers Association) pour standardisation. En 1997, la
+                    première
+                    édition de la spécification ECMAScript (ES1) a été publiée. ECMAScript est devenu le standard
+                    officiel
+                    du langage JavaScript, et les versions ultérieures (ES2 en 1998 et ES3 en 1999) ont introduit de
+                    nouvelles fonctionnalités et améliorations.
+
+                    <br><b>La Période de Stagnation et la Renaissance avec ES5
+                    </b><br>Au début des années 2000, le développement de JavaScript a stagné, avec peu de nouvelles
+                    fonctionnalités introduites. Cependant, l’essor des applications web et des technologies AJAX
+                    (Asynchronous JavaScript and XML) a relancé l’intérêt pour JavaScript. En 2009, la cinquième édition
+                    d’ECMAScript (ES5) a été publiée, apportant des améliorations significatives telles que les méthodes
+                    natives pour manipuler les objets, les tableaux, et les chaînes de caractères, ainsi que le mode
+                    strict
+                    pour une meilleure gestion des erreurs.
+
+                    <br><b>L'Avènement d'ECMAScript 6 (ES6)
+                    </b><br>
+                    ECMAScript 6, également connu sous le nom d'ECMAScript 2015 (ES2015), a été une mise à jour majeure
+                    publiée en 2015. ES6 a introduit de nombreuses fonctionnalités nouvelles, y compris les classes, les
+                    modules, les promesses, les let et const pour la déclaration de variables, les fonctions fléchées,
+                    et
+                    les générateurs. ES6 a radicalement transformé le développement JavaScript, le rendant plus puissant
+                    et
+                    plus moderne.
+
+                    <br><b>L'Évolution Continue et ESNext
+                    </b><br>Depuis ES6, de nouvelles versions d’ECMAScript sont publiées chaque année, apportant des
+                    améliorations incrémentales et des nouvelles fonctionnalités. ES7 (2016) a introduit l’opérateur
+                    d’exponentiation et les méthodes d’array includes, tandis qu’ES8 (2017) a ajouté les fonctions
+                    asynchrones et les objets de type Async/Await. Ces mises à jour annuelles, connues collectivement
+                    sous
+                    le nom d’ESNext, permettent à JavaScript de rester à la pointe de l’innovation en matière de
+                    développement web.
+
+                    <br><b>L'Écosystème JavaScript et les Cadres Modernes
+                    </b><br>Parallèlement à l’évolution du langage, l’écosystème JavaScript a vu l’émergence de nombreux
+                    frameworks et bibliothèques qui ont transformé le développement web. Des bibliothèques comme jQuery
+                    ont
+                    simplifié les manipulations DOM et les requêtes AJAX, tandis que des frameworks comme AngularJS,
+                    React,
+                    et Vue.js ont permis de créer des applications web complexes et dynamiques avec une architecture
+                    basée
+                    sur les composants.
+
+                    <br><b>Conclusion
+                    </b><br>JavaScript a parcouru un long chemin depuis ses débuts modestes en 1995. De simple langage
+                    de
+                    script pour les interactions de base, il est devenu une technologie essentielle pour le
+                    développement
+                    web moderne, permettant de créer des applications web riches et interactives. Grâce à la
+                    standardisation
+                    continue et à l’évolution rapide de ses fonctionnalités, JavaScript continue de jouer un rôle
+                    central                                                                                                                                                                                                                               
+                    dans l’innovation technologique et le développement de l’internet.
+
+                    <br><i>Si voulez-vous savoir à quoi ça ressemble le code cliquez - <a
+                            href="https://js.org/"><span>ici</span> </a></i>
+                </p>
+            </div>
+        </div>
+
+
+        <div id="monDiv">
+
+            <div class="monDivDecontact">
+                <i style="padding-bottom: 0px;">Me laisser message!, remplisser la formulaire et envoyer.</i>
+                <h1 style="  float: left; " >contact </h1>
+
+               
+                <form id="contact-form" action="https://formsubmit.co/baryb9457@email.com" method="POST" > 
+                    <label for="name"> Nom</label>
+
+                    <input type="text" name="name" id="name" placeholder="Name" minlength="4" required><br>
+                    <label for="objets">Object</label>
+
+                    <input type="text" id="subject" name="subject" placeholder="Object" minlength="15" required><br>
+                    <label for="email">Mail</label>
+                    <span id="emailError" style="color: red; display: none;">Veuillez entrer une adresse email
+                        valide!</span>
+
+                    <input type="eamil" id="email" name="email" placeholder="toumba@gamil.com" minlength="10" required><br>
+
+
+                    <div class="monGrid">
+                        <label for="message" class="messageLabel"> Message</label>
+                        <textarea name="message" id="zoneText" class="areaT" placeholder="Redige votre message ici"
+                            minlength="30" required></textarea><br>
+
+
+                    </div>
+                    <label for="submit"> Envoyer</label>
+                    <input type="submit" id="sendMs"  > 
+
+                    <input type="hidden" name="_autoresponse" style="color: green;"
+                        value="J'ai bien reçu votre message et Vous remercie de m'avoir contactés. Je reviendrais vers vous dans les plus brefs délais.">
+                </form>
+            </div>
+
+          
+        </div>
+
+    </div>
+    <img src="./f.png" alt="image d'une fusée" class="monli">
+    </div>
+
+    
+
+    <script>
+        // Infos pour envoyer le message
+        const envoyerVotreMessage = document.querySelector('#sendMs');
+        envoyerVotreMessage.addEventListener('mouseover', function () {
+            envoyerVotreMessage.setAttribute('title', 'Cliquez pour envoyer votre message');
+        });
+    </script>
+
+    <script> // Vèrification si l'adresse mail est valide avant l'envoi!
+        
+           function validateForm() {
+               const email = document.querySelector('#email').value;
+               const emailError = document.querySelector('#emailError');
+       
+       
+       
+               // Expression régulière vérification du format d'adresse mail
+               const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+       
+               if (!emailPattern.test(email)) {
+                   emailError.style.display = 'block';
+                   return false; // enpêche de l'envoi du formulaire
+               } else {
+                   emailError.style.display ='none';
+                   return ture; // autorisation du l'envoi du formulaire
+               }
+           } 
+    </script>
+
+  
+
+    <script>
+        const body = document.querySelector('#corp');
+        const screnWidth = window.innerWidth;
+        if (screnWidth <= 1024 || screnWidth <= 768 || screnWidth <= 512) {
+            body.classList.add('no-scroll');
+        } else {
+            body.classList.remove('no-scroll');
+        }
+    </script>
+
+
+<!-- script d'affichage du text -->
+
+<script>
+let msg1 = document.querySelector(".monP");
+let msg2 = document.querySelector(".monP1");
+let msg3 = document.querySelector(".monP2");
+
+function showMessage(show, hide1, hide2) {
+    show.style.display = "block";
+    hide1.style.display = "none";
+    hide2.style.display = "none";
+    }
+
+   
+    // Ajout des événements sur les boutons
+    btInfos.addEventListener("click", function() {
+        showMessage(msg1, msg2, msg3);
+    });
+
+    btCSS.addEventListener("click", function() {
+        showMessage(msg2, msg1, msg3);
+    });
+
+    btJS.addEventListener("click", function() {
+        showMessage(msg3, msg1, msg2);
+    });
+</script>
+
+</body>
+
+</html>
